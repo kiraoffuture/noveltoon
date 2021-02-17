@@ -18,6 +18,7 @@ import com.kira.android_base.R
 import com.kira.android_base.base.ui.BaseFragment
 import com.kira.android_base.databinding.ActivityMainBinding
 import com.kira.android_base.main.fragments.login.LoginFragment
+import com.kira.android_base.main.fragments.splash.SplashFragment
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
@@ -58,7 +59,7 @@ class MainActivity : AppCompatActivity() {
             DataBindingUtil.setContentView(this, R.layout.activity_main)
         manageActionBarFollowFragment()
 
-        openScreen(LoginFragment.TAG)
+        openScreen(SplashFragment.TAG)
     }
 
     fun openScreen(fragmentTag: String, fragment: BaseFragment? = null) {
@@ -102,6 +103,9 @@ class MainActivity : AppCompatActivity() {
             LoginFragment.TAG -> {
                 LoginFragment()
             }
+            SplashFragment.TAG -> {
+                SplashFragment()
+            }
             else -> null
         }
     }
@@ -109,7 +113,7 @@ class MainActivity : AppCompatActivity() {
     private fun manageActionBarFollowFragment() {
         supportFragmentManager.addOnBackStackChangedListener {
             when (supportFragmentManager.primaryNavigationFragment) {
-                is LoginFragment -> {
+                is SplashFragment -> {
                     supportActionBar?.hide()
                 }
                 else -> {

@@ -1,9 +1,15 @@
 <resources>
     <!--    Main-->
-    <string name="app_name">AndroidBase</string>
+    <string name="app_name" translatable="false">NovelToon</string>
     <string name="error">Error</string>
-    <string name="ok">OK</string>
+    <string name="ok" translatable="false">OK</string>
 
     <!--    Login Fragment-->
     <string name="login">Login</string>
+
+    <!--    Splash Fragment-->
+    <string name="turn_on">Turn On</string>
+    <string name="splash_novel_des_sample">With encounters with mystical ghost phenomena of mountains and forests</string>
+    <string name="splash_novel_title_sample">TRUE MOUNTAIN FOREST TRAINS BY STAIRMAN VIBA</string>
+    <string name="splash_novel_author_sample" translatable="false">TƯƠNG TÁC TA</string>
 </resources>
