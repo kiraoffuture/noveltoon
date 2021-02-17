@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error">Lỗi</string>
+    <string name="login">Đăng Nhập</string>
+    <string name="turn_on">Bật</string>
+    <string name="splash_novel_title_sample">TRUYỆN MA RỪNG NÚI CÓ THẬT CỦA KỸ SƯ TRẠM VIBA</string>
+    <string name="splash_novel_des_sample">Với những lần chạm trán với những hiện tượng ma mị huyền bí của núi rừng đại ngàn</string>
+</resources>
