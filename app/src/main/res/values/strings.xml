@@ -12,4 +12,7 @@
     <string name="splash_novel_des_sample">With encounters with mystical ghost phenomena of mountains and forests</string>
     <string name="splash_novel_title_sample">TRUE MOUNTAIN FOREST TRAINS BY STAIRMAN VIBA</string>
     <string name="splash_novel_author_sample" translatable="false">TƯƠNG TÁC TA</string>
+
+    <!--    YearSelectorDialog-->
+    <string name="done">OK</string>
 </resources>
