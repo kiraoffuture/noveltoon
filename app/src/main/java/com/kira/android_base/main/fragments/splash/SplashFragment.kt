@@ -9,16 +9,14 @@ class SplashFragment : BaseFragment(R.layout.fragment_splash) {
 
     companion object {
         val TAG: String = SplashFragment::class.java.simpleName
+        private const val SPLASH_DELAY = 5000L
     }
 
     override fun initViews() {
         mainActivity?.hideStatusBar()
         viewDataBinding?.root?.postDelayed({
-            mainActivity?.addOneTimeBackStackListener {
-                mainActivity?.openScreen(StartSettingFragment.TAG)
-            }
-            mainActivity?.popBackStack()
-        }, 1000L)
+            mainActivity?.openScreen(StartSettingFragment.TAG, isAddToBackStack = false)
+        }, SPLASH_DELAY)
 
         //fake data
         (viewDataBinding as FragmentSplashBinding?)?.imageUrl =
