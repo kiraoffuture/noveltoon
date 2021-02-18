@@ -20,6 +20,7 @@ import com.kira.android_base.base.ui.BaseFragment
 import com.kira.android_base.databinding.ActivityMainBinding
 import com.kira.android_base.main.fragments.login.LoginFragment
 import com.kira.android_base.main.fragments.splash.SplashFragment
+import com.kira.android_base.main.fragments.startsettting.StartSettingFragment
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
@@ -120,6 +121,9 @@ class MainActivity : AppCompatActivity() {
             SplashFragment.TAG -> {
                 SplashFragment()
             }
+            StartSettingFragment.TAG -> {
+                StartSettingFragment()
+            }
             else -> null
         }
     }
@@ -127,11 +131,8 @@ class MainActivity : AppCompatActivity() {
     private fun manageActionBarFollowFragment() {
         supportFragmentManager.addOnBackStackChangedListener {
             when (supportFragmentManager.primaryNavigationFragment) {
-                is SplashFragment -> {
+                is SplashFragment, is StartSettingFragment -> {
                     supportActionBar?.hide()
-                }
-                else -> {
-                    supportActionBar?.show()
                 }
             }
         }
