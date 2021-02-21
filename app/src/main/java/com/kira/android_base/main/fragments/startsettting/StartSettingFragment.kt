@@ -3,6 +3,8 @@ package com.kira.android_base.main.fragments.startsettting
 import android.util.Log
 import com.kira.android_base.R
 import com.kira.android_base.base.ui.BaseFragment
+import com.kira.android_base.main.fragments.startsettting.languageselector.Language
+import com.kira.android_base.main.fragments.startsettting.languageselector.LanguageSelectorDialog
 
 class StartSettingFragment : BaseFragment(R.layout.fragment_start_setting) {
 
@@ -12,9 +14,9 @@ class StartSettingFragment : BaseFragment(R.layout.fragment_start_setting) {
 
     override fun initViews() {
         context?.let {
-            YearSelectorDialog(it, object : YearSelectorDialog.Listener {
-                override fun onDone(year: Int) {
-                    Log.d(TAG, "onDone: year = $year")
+            LanguageSelectorDialog(it, object : LanguageSelectorDialog.Listener {
+                override fun onLanguageSelected(language: Language) {
+                    Log.d(TAG, "onLanguageSelected: $language")
                 }
             }).show()
         }

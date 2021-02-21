@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dodger_blue">#1A93F1</color>
     <color name="hawkes_blue">#DEEDFD</color>
+    <color name="azure_radiance">#008FF1</color>
+    <color name="mercury">#E8E8E8</color>
 </resources>
