@@ -398,6 +398,9 @@
   <dimen name="space_100">
     150.0dp
   </dimen>
+  <dimen name="space_168">
+    252.0dp
+  </dimen>
   <dimen name="space_174">
     261.0dp
   </dimen>
